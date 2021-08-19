@@ -1,0 +1,81 @@
+@import "./colores";
+@import "./operaciones";
+
+.secform {
+    display: flex;
+    justify-content: space-evenly;
+
+    .secform__formulario {
+        background-color: $verde-claro;
+        width: max-content;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        padding: 15px;
+    }
+
+    .secform__legend {
+        background-color: $azul-claro;
+        color: $color-textos;
+    }
+
+    .secform__cajaBoton {
+        display: flex;
+        margin: 10px;
+
+        .secform__boton {
+            margin: 10px;
+            padding: 5px 25px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: $color-textos;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+        }
+
+        .secform__boton {
+            background-image: linear-gradient(to right, $verde-claro 0%, $azul-claro  51%, $verde-claro  100%)
+        }
+
+        .secform__boton:hover {
+            background-position: right center;
+            color: $animacion-blanco;
+            text-decoration: none;
+        }
+    }
+    
+    .secform__datos {
+        margin: 15px;
+
+        .secform__inp {
+            margin-bottom: 25px;
+        }
+    }
+
+}
+
+.correoFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .correoFlex__texto {
+        background-color: $verde-claro;
+    }
+}
+
+.eifs {
+    display: flex;
+    justify-content: space-evenly;
+
+    .eifs__metodo {
+        width: $ancho-fotos*30;
+        height: ($altura-fotos*30)-5;
+        margin-bottom: 1em;
+    }
+
+    .eifs__metodo:hover {
+        border-bottom: outset 0.4em black;
+    }
+}
