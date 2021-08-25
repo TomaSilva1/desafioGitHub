@@ -1,0 +1,123 @@
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info .info__img {
+  width: auto;
+  height: auto;
+  width: 7em;
+  height: 7em;
+}
+
+.info .info__lorem {
+  width: 200px;
+  margin-left: 20px;
+  color: white;
+  font-size: 1.2em;
+}
+
+.negro {
+  color: black;
+}
+
+.ayuda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), to(white));
+  background-image: linear-gradient(to top, #f0f0f0, white);
+  border-radius: 1.4em;
+  padding: 0.8em;
+  -webkit-box-shadow: 0 0 2em darkgrey;
+          box-shadow: 0 0 2em darkgrey;
+  border: solid 2px gray;
+}
+
+.ayuda .ayuda__search {
+  margin-bottom: 1em;
+}
+
+.ayuda .ayuda__redSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ayuda .ayuda__instagram {
+  max-height: 4em;
+  max-width: 4em;
+  margin-top: 8px;
+}
+
+.ayuda .ayuda__facebook {
+  max-height: 4em;
+  max-width: 4em;
+}
+
+.local {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.local .local__p {
+  font-size: 1.2em;
+}
+
+.ubicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.ubicacion .ubicacion__argtxt {
+  width: 20em;
+}
+
+.ubicacion .ubicacion__argimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=footer.css.map */

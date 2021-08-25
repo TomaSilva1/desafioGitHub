@@ -1,0 +1,17 @@
+@import "./colores";
+@import "./operaciones";
+
+.navegacion {
+    width: max-content;
+    text-transform: uppercase;
+
+    .navegacion__lista {
+        display: flex;
+        list-style: none;
+    }
+
+    .navegacion__elemento {
+        margin: 0.8em;
+    }
+    
+}

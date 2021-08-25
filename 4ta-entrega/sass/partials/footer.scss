@@ -1,0 +1,83 @@
+@import "./colores";
+@import "./operaciones";
+
+.info {
+    display: flex;
+    align-items: center;
+    
+    .info__img {
+        width: auto;
+        height: auto;
+        width: $ancho-fotos*7;
+        height: $altura-fotos*7;
+    }
+
+    .info__lorem {
+        width: 200px;
+        margin-left: 20px;
+        color: white;
+        font-size: 1.2em;
+    }
+}
+
+.negro {
+    color: black;
+}
+
+.ayuda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+    background-image: linear-gradient(to top, #f0f0f0, white);
+    border-radius: 1.4em;
+    padding: 0.8em;
+    box-shadow: 0 0 2em darkgrey;
+    border: solid 2px gray;
+
+    .ayuda__search {
+        margin-bottom: 1em;
+    }
+
+    .ayuda__redSocial {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ayuda__instagram{
+        max-height: 4em;
+        max-width: 4em;
+        margin-top: 8px;
+    }
+
+    .ayuda__facebook {
+        max-height: 4em;
+        max-width: 4em;
+    }
+}
+
+.local {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    .local__p {
+        font-size: 1.2em;
+    }
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: space-evenly;
+    .ubicacion__argtxt {
+        width: 20em;
+    }
+    .ubicacion__argimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

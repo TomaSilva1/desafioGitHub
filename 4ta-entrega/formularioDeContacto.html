@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./Color.css">
+    <link rel="stylesheet" href="./sass/diseño.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+    <div class="headtxt">
+    <h2 class="tituloheader">Contacto</h2>
+    <nav class="navegacion">
+        <ul class="navegacion__lista">
+            <li class="navegacion__elemento"><a href="./index.html">Inicio</a></li>
+            <li class="navegacion__elemento"><a href="./formularioDeContacto.html">Contacto</a></li>
+            <li class="navegacion__elemento"><a href="./materialesDeConstruccion.html">Servicios</a></li>
+            <li class="navegacion__elemento"><a href="./acercaDeNosotros.html">Acerca de</a></li>
+            <li class="navegacion__elemento"><a href="./nuestraUbicacion.html">Donde trabajamos</a></li>
+        </ul>
+    </nav>
+    </div>
+    </header>
+    <!--Fin Header-->
+    <!--Main-->
+    <main>
+    <div class="centro">
+        <h2>Contactanos por medio de este formulario</h2>
+    </div>
+    <section class="secform">
+    <Fieldset class="secform__formulario">
+        <Legend class="secform__legend">Formulario de usuario</Legend>
+        <form action="#" method="get">
+            <div class="secform__datos">
+                <label class="secform__label">Nombre y apellido</label>
+                <input type="text" name="datos" id="" placeholder="Nombre y Apellido" required class="secform__inp">
+            </div>
+            <div class="secform__datos">
+                <label>Correo electronico</label>
+                <input type="email" name="correo" id="" placeholder="Ingrese su correo" required class="secform__inp">
+            </div>
+            <div class="borde"></div>
+            <div class="secform__datos">
+                <label>Elija tipo de consula</label>
+                <p>Contacto para realizar un presupuesto</p>
+                <label><input type="radio" name="Consulta" id="" value="PRESUPUESTO" class="secform__inp"></label>
+                <p>Contacto para aclarar dudas</p>
+                <label><input type="radio" name="Consulta" id="" value="DUDA" class="secform__inp"></label>
+            </div>
+            <div class="secform__datos">
+                <p>Genero</p>
+                <select name="genero" id="" class="secform__inp">
+                    <option value="" disabled selected>Coloca tu genero</option>
+                    <option value="H">Hombre</option>
+                    <option value="M">Mujer</option>
+                </select>
+            </div>
+            <div class="secform__datos">
+                <label>Aceptar terminos y condiciones</label>
+                <input type="checkbox" name="terminos" id="">
+            </div>
+            <div class="borde"></div>
+            <div class="secform__cajaBoton">
+                <input type="submit" value="Enviar" class="secform__boton">
+                <input type="reset" value="Limpiar" class="secform__boton">
+                <input type="button" value="falta JS" class="secform__boton">
+            </div>
+        </form>
+    </Fieldset>
+    <div class="correoFlex">
+    <h3 class="correoFlex__texto">Manda tus datos y en menos de 3 dias nos pondremos en contacto contigo ;)</h3>
+    <img src="./img/crear-correo-electronico-gratis.png" alt="Correo" class="correo">
+    </div>  
+    </section>
+    </main>
+    <!--Fin Main-->
+    <!--Footer-->
+    <footer>
+        <section class="info">
+            <img src="./img/LOGO/pngwing.com.png" alt="logoLinux" class="info__img">
+            <p class="info__lorem">Somos una empresa con mas de 7 años de trayectoria en la construccion en seco</p>
+        </section>
+        <section class="local">
+            <h3 class="tituloheader"><strong>SUCURSAL PRINCIPAL</strong></h3>
+            <P class="local__p">Tucuman-Famailla</P>
+            <p class="local__p"><strong>Calle de sucursal:</strong> Diego de villaroel 74º</p>
+            <p class="local__p"><strong>Horario de atencion:</strong> Lun - Vie: 8.00am 6.00pm</p>
+            <p class="local__p"><strong>Numero de contacto:</strong> +54 381-4423310</p>
+            <p class="local__p"><strong>Email de contacto:</strong> info@servinexus.com.ar</p>
+        </section>
+        <section class="ayuda">
+            <h3 class="negro">Nuestras Redes</h3>
+            <section class="ayuda__redSocial">
+            <a href="https://www.instagram.com/"><img src="./img/pngegg.png" alt="instagram" class="ayuda__instagram"></a>
+            <a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="ayuda__facebook"></a>
+            </section>
+        </section>
+    </footer>
+    <!--Fin Footer-->
+</body>
+</html>
