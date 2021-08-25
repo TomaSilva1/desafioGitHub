@@ -1,3 +1,28 @@
+.nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    flex-direction: column;
+    border: solid 2px gray;
+}
+
+.acerca {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nosotros {
+    background-color: white;
+    width: max-content;
+    box-shadow: 0 0 2em darkgrey;
+}
+
+.nosotros__h {
+    margin: 1em;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +32,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #FFDEE9;
-    background-image: linear-gradient(to top, #1aa0b0 0%, #cbfff7 100%);
+    background-color: #F0F0F0;
 }
 
 .borde {
@@ -27,7 +51,7 @@ body {
    text-transform: uppercase;
    transition: 0.5s;
    background-size: 200% auto;
-   color: darkred;            
+   color: #c30f14;            
    box-shadow: 0 0 20px #eee;
    border-radius: 10px;
  }
@@ -41,22 +65,24 @@ body {
  /*Fin Formulario*/
 /*titulos / subtitulos / textos*/
 h1 {
-    color: #A52A2A;
+    color: white;
     width: max-content;
     border-radius: 10px;
-    background-image: linear-gradient(to top,#fffba8, transparent);
+}
+
+.tituloheader {
+    color: white;
 }
 
 h2 {
-    color: darkred;
+    color: #c30f14;
     width: max-content;
     font-size: 1.8em;
     border-radius: 10px;
-    background-image: linear-gradient(to top, #fffba8, transparent);
 }
 
 h3 {
-    color: darkred;
+    color: #c30f14;
     width: max-content;
 }
 
@@ -73,25 +99,12 @@ h3 {
 
 ul li a{
     text-decoration: none;
-    color: tomato;
+    color: grey;
 }
 
 ul li a:hover{
     color: white;
     transition: 0.4s;
-}
-
-table {
-    background-color: lightgreen;
-    margin-top: 40px;
-}
-
-.ejemplo {
-    color: darkred;
-    background-color: lightgreen;
-    font-size: 20px;
-    width: max-content;
-    font-style: oblique;
 }
 
 #mod {
@@ -135,7 +148,7 @@ input {
 }
 /*secciones*/
 header {
-    background-image: url(./img/blueprints-architecture-digital-art-house-wallpaper-preview.jpg);
+    background-color: black;
     padding: 20px;
     height: 2em;
 }
@@ -148,7 +161,7 @@ footer {
 }
 
 footer {
-    background-image: linear-gradient(to top, rgb(20, 20, 20), grey)
+    background-color: rgb(20, 20, 20);
 }
 
 .footerInfo {
@@ -190,7 +203,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
+    background-color: white;
+    border: solid 2px grey;
+    box-shadow: 0 0 2em darkgrey;
+    width: max-content;
+    padding: 0.1em;
+    width: max-content;
 }
 
 .lorem {
@@ -220,237 +238,4 @@ footer {
 
 .metodo:hover {
     border-bottom: outset 0.4em black;
-}
-
-
-/*GRID*/
-
-.caja {
-    display: grid;
-    grid-template-columns: 20em auto 20em;
-    grid-template-rows: 10em auto 1em;
-    grid-template-areas: 
-    "izquierda texto derecha"
-    "izquierda centro derecha";
-
-    height: 100vh;
-
-    grid-column-gap: 0.5em;
-    grid-row-gap: 0.5em;
-
-}
-
-.border{
-    background-color: beige;
-    border: solid 1px black;
-    color: #000000;
-}
-
-#text {
-    grid-area: texto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-#centro {
-    grid-area: centro;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    align-items: center;
-}
-
-#izquierda {
-    grid-area: izquierda;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    align-items: center;
-}
-
-#derecha {
-    grid-area: derecha;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    align-items: center;
-}
-
-.caja-cliente-grid {
-    display: flex;
-    flex-direction: column;
-    margin-left: 6.5em;
-}
-
-.nosotros{
-    width: 70%;
-    font-size: 18px;
-}
-
-.nosotros2{
-    font-size: 24px;
-}
-
-.centrog {
-    width: 90%;
-}
-
-.izquierdag {
-    width: 70%;
-}
-
-.imggrid {
-    display: flex;
-    flex-direction: row;
-}
-
-.imgg {
-    height: auto;
-    width: auto;
-    max-height: 200px;
-    max-width: 200px;
-    margin: 30px;
-}
-
-.clientes {
-    width: 70%;
-}
-
-.imgclientes {
-    margin-top: 70px;
-    border-radius: 20px;
-}
-
-.creatividad {
-    margin-top: 1em;
-}
-
-.mejoresPrecios {
-    margin-top: 1em;
-}
-
-.rapidezCalidad {
-    margin-top: 1em;
-}
-
-.capitalHumano {
-    margin-top: 3em;
-}
-
-.opiClientes {
-    margin-top: 2em;
-}
-
-/*FIN GRID*/
-
-@media only screen and (max-width: 600px){
-    .headtxt{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navegar{
-        display: flex;
-        flex-direction: column;
-    }
-    header{
-        height: 225px;
-    }
-    .textoImagen{
-        display: flex;
-        flex-direction: column;
-    }
-    .lorem{
-        width: 400px;
-    }
-    h2{
-        width: min-content;
-    }
-}
-@media only screen and (max-width: 1450px){
-    .caja {
-        display: grid;
-        grid-template-columns: 20em auto 20em;
-        grid-template-rows: 10em auto 20em;
-        grid-template-areas: 
-        "izquierda texto none"
-        "izquierda centro none"
-        "derecha derecha none";
-    
-        height: 100vh;
-    
-        grid-column-gap: 0.5em;
-        grid-row-gap: 0.5em;
-
-        margin-bottom: 25em;
-    
-    }
-    #derecha {
-        grid-area: derecha;
-        display: flex;
-        justify-content: start;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .imgclientes {
-        height: 7em;
-        width: 7em;
-    }
-
-    .caja-cliente-grid {
-        display: flex;
-        flex-direction: row;
-        margin-left: 3em;
-    }
-
-    .cliente-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .todo-cliente {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-   }
-
-}
-
-@media only screen and (min-width: 1000px){
-    header{
-        background-color: grey;
-    }
-    footer{
-        background-color: grey;
-    }
-    body{
-        background-color: ivory;
-    }
-    
-}
-
-/*ANIMACIONES*/
-
-h1 {
-    animation-duration: 1s;
-    animation-name: opacidad;
-}
-
-h2 {
-    animation-duration: 2s;
-    animation-name: opacidad;
-}
-
-@keyframes opacidad {
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
 }

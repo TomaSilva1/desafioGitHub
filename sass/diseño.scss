@@ -3,3 +3,154 @@
 @import "./partials/header";
 @import "./partials/main";
 @import "./partials/footer.scss";
+
+/*MEDIA*/
+@media only screen and (max-width: 768px){
+
+    .navegacion {
+        .navegacion__lista {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3em;
+        }
+
+        .navegacion__elemento {
+            font-size: 0.9em;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 35em;
+        align-items: center;
+    }
+
+    .headtxt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegar{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        height: 17em;
+    }
+    .textoImagen{
+        display: flex;
+        flex-direction: column;
+    }
+    .lorem{
+        width: 400px;
+    }
+    h2{
+        font-size: 1.4em;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .secform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ubicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ubicacion__argimg {
+            margin-top: 3em;
+        }
+    }
+}
+@media only screen and (max-width: 1440px){
+
+    .img {
+        max-height: 400px;
+        max-width: 450px;
+    }
+
+    .lorem {
+        font-size: 1em;
+    }
+
+    .caja {
+        display: grid;
+        grid-template-columns: 20em auto 20em;
+        grid-template-rows: 10em auto 20em;
+        grid-template-areas: 
+        "izquierda texto none"
+        "izquierda centro none"
+        "derecha derecha none";
+    
+        height: 100vh;
+    
+        grid-column-gap: 0.5em;
+        grid-row-gap: 0.5em;
+
+        margin-bottom: 25em;
+    
+    }
+    #derecha {
+        grid-area: derecha;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .imgclientes {
+        height: 7em;
+        width: 7em;
+    }
+
+    .caja-cliente-grid {
+        display: flex;
+        flex-direction: row;
+        margin-left: 3em;
+    }
+
+    .cliente-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo-cliente {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+}
+/*FIN MEDIA*/
+
+/*ANIMACIONES*/
+
+h1 {
+    animation-duration: 1s;
+    animation-name: opacidad;
+}
+
+h2 {
+    animation-duration: 2s;
+    animation-name: opacidad;
+}
+
+@keyframes opacidad {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+/*FIN ANIMACIONES*/

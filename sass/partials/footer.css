@@ -21,6 +21,10 @@
   font-size: 1.2em;
 }
 
+.negro {
+  color: black;
+}
+
 .ayuda {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,10 +40,13 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 20px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#4e61a0), to(#8fa5fa));
-  background-image: linear-gradient(to top, #4e61a0, #8fa5fa);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), to(white));
+  background-image: linear-gradient(to top, #f0f0f0, white);
   border-radius: 1.4em;
   padding: 0.8em;
+  -webkit-box-shadow: 0 0 2em darkgrey;
+          box-shadow: 0 0 2em darkgrey;
+  border: solid 2px gray;
 }
 
 .ayuda .ayuda__search {
@@ -57,14 +64,14 @@
 }
 
 .ayuda .ayuda__instagram {
-  max-height: 5em;
-  max-width: 5em;
+  max-height: 4em;
+  max-width: 4em;
+  margin-top: 8px;
 }
 
 .ayuda .ayuda__facebook {
-  max-height: 3.2em;
-  max-width: 3.2em;
-  margin-top: 5px;
+  max-height: 4em;
+  max-width: 4em;
 }
 
 .local {

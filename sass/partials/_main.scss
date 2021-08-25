@@ -6,16 +6,17 @@
     justify-content: space-evenly;
 
     .secform__formulario {
-        background-color: $verde-claro;
+        background-color: lavenderblush;
         width: max-content;
         margin-top: 20px;
         margin-bottom: 100px;
         padding: 15px;
+        box-shadow: 0 0 2em darkgrey;
     }
 
     .secform__legend {
-        background-color: $azul-claro;
-        color: $color-textos;
+        background-color: black;
+        color: white;
     }
 
     .secform__cajaBoton {
@@ -29,13 +30,13 @@
             text-transform: uppercase;
             transition: 0.5s;
             background-size: 200% auto;
-            color: $color-textos;            
+            color: darkgrey;            
             box-shadow: 0 0 20px #eee;
             border-radius: 10px;
         }
 
         .secform__boton {
-            background-image: linear-gradient(to right, $verde-claro 0%, $azul-claro  51%, $verde-claro  100%)
+            background-color: rgb(24, 23, 23);
         }
 
         .secform__boton:hover {
@@ -61,7 +62,7 @@
     justify-content: space-evenly;
     align-items: center;
     .correoFlex__texto {
-        background-color: $verde-claro;
+        box-shadow: 0 0 2em darkgrey;
     }
 }
 
