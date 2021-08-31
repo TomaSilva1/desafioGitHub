@@ -1,3 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F0F0F0;
+}
+/*HEADER*/
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabeza {
+    text-align: center;
+    background-color: black;
+}
+    /*TITULOS, SUBTITULOS*/
+    h1 {
+        color: white;
+    }
+    
+    .tituloheader {
+        color: white;
+    }
+    
+    .titulo {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+    
+    h2 {
+        color: black;
+        font-size: 2;
+        text-align: center;
+        text-shadow: 1em 1em 2em white;
+    }
+    
+    h3 {
+        color: black;
+        width: max-content;
+    }
+    
+    .lorem {
+        width: 600px;
+        margin-right: 2em;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-left: 2em;
+    }
+    /*FIN TITULOS, SUBTITULOS*/
+/*FIN HEADER*/
+
+/*MAIN*/
+    /*IMAGEN*/
+    .img {
+        max-height: 500px;
+        max-width: 500px;
+    }
+    .img-nosotros {
+        height: 7em;
+        width: 13em;
+    }
+    
+    .filial {
+        width: auto;
+        height: auto;
+        width: 8em;
+        height: 8em;
+    }
+    /*FIN IMAGEN*/
+    /*TEXTO DENTRO DE IMAGEN*/
+.textoCentro {
+    color: white;
+    text-shadow: 3px 3px grey;
+}
+.centro {
+    background-image: url(./img/nuevoFondo.jpg);
+    display: flex;
+    justify-content: center;
+    padding: 7em;
+    background-repeat: repeat;
+    background-position: center;
+}
+.textoImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid 2px grey;
+    box-shadow: 0 0 2em darkgrey;
+    width: max-content;
+    padding: 0.1em;
+}
+    /*FIN TEXTO DENTRO DE IMAGEN*/
+    /*NOSOTROS*/
+.caja__nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 8em;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nuestro {
+    margin-bottom: 1em;
+}
+
+.iframe {
+    box-shadow: 0 0 2em grey;
+}
+
+.lorem-2 {
+    font-size: 1em;
+    width: 20em;
+}
+
+.caja__opcion {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.beneficios {
+    margin-top: 8em;
+}
+
+.elegime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nosotros2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    flex-direction: column;
+    border: solid 2px gray;
+    height: 22em;
+}
+
+.nosotros2 {
+    background-color: white;
+    width: max-content;
+    box-shadow: 0 0 2em darkgrey;
+}
+
 .nosotros {
     display: flex;
     justify-content: center;
@@ -20,167 +178,59 @@
 }
 
 .nosotros__h {
-    margin: 1em;
+    margin-bottom: 1em;
+    margin-top: 2em;
 }
+    /*FIN NOSOTROS*/
+    /*FORMULARIO*/
+    .correo {
+        height: auto;
+        width: auto;
+        max-height: 20em;
+        max-width: 40em;
+    }
+    /*FIN FORMULARIO*/
+    .borde {
+        padding: 1px;
+        background-color: #140f07;
+    }
+    
+    .headtxt {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #mod {
+        list-style: upper-roman;
+        background-color: gray;
+        width: max-content;
+        color: black;
+    }
+/*FIN MAIN*/
 
-*{
-    margin: 0;
-    padding: 0;
+
+/*BOOTSTRAP*/
+p {
+    margin-bottom: 0px !important;
 }
+/*FIN BOOTSTRAP*/
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #F0F0F0;
-}
-
-.borde {
-    padding: 1px;
-    background-color: #140f07;
-}
-
-/*Formulario*/
-
-
-.boton {background-image: linear-gradient(to right, #B3FFAB 0%, #12FFF7  51%, #B3FFAB  100%)}
-.boton {
-   margin: 10px;
-   padding: 5px 25px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: #c30f14;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
- }
-
- .boton:hover {
-   background-position: right center;
-   color: #fff;
-   text-decoration: none;
- }
-
- /*Fin Formulario*/
-/*titulos / subtitulos / textos*/
-h1 {
-    color: white;
-    width: max-content;
-    border-radius: 10px;
-}
-
-.tituloheader {
-    color: white;
-}
-
-h2 {
-    color: #c30f14;
-    width: max-content;
-    font-size: 1.8em;
-    border-radius: 10px;
-}
-
-h3 {
-    color: #c30f14;
-    width: max-content;
-}
-
-/*FIN (titulos / subtitulos / textos)*/
-
-/*NAVEGACIÓN*/
-
-.headtxt {
+/*FOOTER*/
+footer {
     display: flex;
     justify-content: space-between;
+    margin-top: 3em;
+    padding: 20px;
 }
 
-/*nav{background-image: linear-gradient(to right, #00C9FF 0%, #92FE9D  51%, #00C9FF  100%)}*/
-
-ul li a{
-    text-decoration: none;
-    color: grey;
-}
-
-ul li a:hover{
-    color: white;
-    transition: 0.4s;
-}
-
-#mod {
-    list-style: upper-roman;
-    background-color: gray;
-    width: max-content;
-    color: black;
-}
-
-
-select {
-    background-color: lightskyblue;
-}
-
-input {
-    background-color: lightskyblue;
-}
-
-.pregunta {
-    background-color: lightgreen;
-    width: 540px;
-    border: solid 3px black;
-    height: 125px;
-    padding-left: 5px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.pregunta p{
-    font-size: 18px;
-    word-spacing: 2px;
-}
-
-.centro {
-    background-image: url(./img/pro1.jpg);
-    display: flex;
-    justify-content: center;
-    padding: 12.5em;
-    background-repeat: repeat;
-    background-position: center;
-    margin: 0.5em;
-}
-/*secciones*/
-header {
+footer {
     background-color: black;
-    padding: 20px;
-    height: 2em;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10em;
-    padding: 20px;
-}
-
-footer {
-    background-color: rgb(20, 20, 20);
 }
 
 .footerInfo {
     width: 20em;
 }
-
-.img {
-    max-height: 500px;
-    max-width: 500px;
-}
-
-.correo {
-    height: auto;
-    width: auto;
-    max-height: 20em;
-    max-width: 40em;
-}
-
-/* redes sociales */
+    /* redes sociales */
 .redSocial{
     display: flex;
     flex-direction: row;
@@ -193,49 +243,7 @@ footer {
     max-width: 55px;
 }
 
-.search{
-    margin-bottom: 10px;
-}
 
-/* redes sociales */
+    /* redes sociales */
+/*FIN FOOTER*/
 
-.textoImagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: solid 2px grey;
-    box-shadow: 0 0 2em darkgrey;
-    width: max-content;
-    padding: 0.1em;
-    width: max-content;
-}
-
-.lorem {
-    width: 600px;
-    margin-right: 40px;
-    font-size: 1.2em;
-    line-height: 1.5em;
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.filial {
-    width: auto;
-    height: auto;
-    width: 8em;
-    height: 8em;
-}
-
-.preguntamate {
-    display: flex;
-    justify-content: center;
-}
-
-.metodo:hover {
-    border-bottom: outset 0.4em black;
-}

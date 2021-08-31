@@ -5,19 +5,96 @@
 @import "./partials/footer.scss";
 
 /*MEDIA*/
+
+@media only screen and (max-width: 425px){
+    .img {
+        max-height: 200px !important;
+        max-width: 250px !important;
+    }
+
+    .lorem {
+        font-size: 0.8em !important;
+        width: 65% !important;
+    }
+
+    h2 {
+        font-size: 1em !important;
+    }
+
+    h4 {
+        font-size: 0.8em !important;
+    }
+
+    .local__p {
+        font-size: 0.7em !important;
+    }
+
+    .info__img {
+        width: 5em !important;
+        height: 5em !important;
+    }
+
+    .info__lorem {
+        font-size: 0.7em !important;
+    }
+
+    .textoImagen {
+        width: 20em !important;
+    }
+
+    .correo {
+        height: 10em;
+        width: 20em;
+    }
+
+    .correoFlex__texto {
+        font-size: 1em;
+    }
+
+    #secform__inp {
+        margin: 0px;
+    }
+
+    #mapa {
+        height: 16em;
+        width: 20em;
+    }
+
+    #ubicacion__argtxt {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    #nosotros {
+        width: 20em;
+    }
+
+    .iframe {
+        height: 15em;
+        width: 20em;
+    }
+
+    .lorem-2 {
+        font-size: 0.8em;
+    }
+
+}
+
 @media only screen and (max-width: 768px){
 
-    .navegacion {
-        .navegacion__lista {
-            display: flex;
-            flex-direction: column;
-            margin-top: 3em;
-        }
-
-        .navegacion__elemento {
-            font-size: 0.9em;
-        }
+    .img {
+        max-height: 350px;
+        max-width: 400px;
     }
+
+    .lorem {
+        font-size: 1em;
+        margin: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }    
 
     footer {
         display: flex;
@@ -43,9 +120,11 @@
         display: flex;
         flex-direction: column;
     }
-    .lorem{
-        width: 400px;
+
+    #textoImagen {
+        width: 40em;
     }
+    
     h2{
         font-size: 1.4em;
     }
@@ -69,7 +148,9 @@
             margin-top: 3em;
         }
     }
+
 }
+
 @media only screen and (max-width: 1440px){
 
     .img {
@@ -78,58 +159,74 @@
     }
 
     .lorem {
+        font-size: 1.3em;
+    }
+
+    .textoImagen {
+        width: max-content;
+    }
+}
+
+.correoFlex__texto {
+    width: 60%;
+    text-align: center;
+}
+
+.secform {
+    margin-left: 6em;
+}
+
+@media only screen and (max-width: 1024px){
+    .img {
+        max-height: 350px;
+        max-width: 400px;
+    }
+
+    .lorem {
         font-size: 1em;
+        width: 60%;
+        margin: 1em;
     }
 
-    .caja {
-        display: grid;
-        grid-template-columns: 20em auto 20em;
-        grid-template-rows: 10em auto 20em;
-        grid-template-areas: 
-        "izquierda texto none"
-        "izquierda centro none"
-        "derecha derecha none";
-    
-        height: 100vh;
-    
-        grid-column-gap: 0.5em;
-        grid-row-gap: 0.5em;
-
-        margin-bottom: 25em;
-    
-    }
-    #derecha {
-        grid-area: derecha;
-        display: flex;
-        justify-content: start;
-        flex-direction: row;
-        align-items: center;
+    .textoImagen {
+        width: 60em;
     }
 
-    .imgclientes {
-        height: 7em;
-        width: 7em;
-    }
-
-    .caja-cliente-grid {
-        display: flex;
-        flex-direction: row;
-        margin-left: 3em;
-    }
-
-    .cliente-grid {
-        display: flex;
+    .secform {
+        margin-left: 0;
         flex-direction: column;
         align-items: center;
     }
 
-    .todo-cliente {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-   }
+    .ubicacion__argtxt {
+        font-size: 1.3em;
+    }
+
+    .mapa {
+        height: 20em;
+        width: 24em;
+    }
+
+    .caja__nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros {
+        width: 35em;
+    }
+
+    .caja__opcion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .beneficios {
+        margin-top: 0px;
+    }
 
 }
+
 /*FIN MEDIA*/
 
 /*ANIMACIONES*/
@@ -153,4 +250,3 @@ h2 {
         opacity: 1;
     }
 }
-/*FIN ANIMACIONES*/

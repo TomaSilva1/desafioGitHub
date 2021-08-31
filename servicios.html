@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ubicacion</title>
+    <title>Servicios</title>
     <link rel="stylesheet" href="./Color.css" />
     <link rel="stylesheet" href="./sass/diseño.css" />
   </head>
@@ -12,8 +18,8 @@
     <!--HEADER-->
     <header>
       <!--TITULO-->
-      <div>
-        <h1>Encuentranos</h1>
+      <div class="cabeza">
+        <h1>Servicios</h1>
       </div>
       <!--FIN TITULO-->
       <!--NAVEGACION-->
@@ -26,8 +32,7 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,9 +44,7 @@
                 <a class="nav-link" href="./servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./formularioDeContacto.html"
-                  >Contacto</a
-                >
+                <a class="nav-link" href="./formularioDeContacto.html">Contacto</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./acercaDeNosotros.html">Nosotros</a>
@@ -60,33 +63,83 @@
     <main>
       <!--TEXTO DENTRO DE IMAGEN-->
       <div class="centro">
-        <h2 class="textoCentro">ENCUENTRA NUESTRA SUCURSAL AQUI</h2>
+        <h2 class="textoCentro">¡CONOCE LOS SERVICIOS QUE OFRECEMOS!</h2>
       </div>
-      <!--FIN TEXTO DENTRO DE IMAGEN-->
-      <!--UBICACION GOOGLE MAPS-->
-      <section class="ubicacion">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14213.71603436145!2d-65.4087758087862!3d-27.048203168323823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9422495f856e7667%3A0x5db3a97c9858f934!2zRmFtYWlsbMOhLCBUdWN1bcOhbg!5e0!3m2!1ses-419!2sar!4v1625605013941!5m2!1ses-419!2sar"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          class="mapa"
-          id="mapa"
-        ></iframe>
-        <div class="ubicacion__argimg">
-          <img src="./img/arg.png" alt="argentina" class="filial" />
-          <h3 class="ubicacion__argtxt" id="ubicacion__argtxt">
-            Encontraras nuestras sucursales en argentina. <br />Comunicate con
-            nosotros en la seccion de
-            <a href="./formularioDeContacto.html"><strong>contacto</strong></a>
-            o por nuestro
-            <a href="https://www.instagram.com/"><strong>instagram</strong></a>
-          </h3>
+      <!--TEXTO DENTRO DE IMAGEN-->
+      <!--LISTA DE SERVICIOS-->
+      <section class="acerca">
+        <div class="titulo">
+          <h2 class="titulo">Calculo estructural</h2>
         </div>
+        <section class="textoImagen" id="textoImagen">
+          <p class="lorem">
+            El cálculo estructural es el trabajo que realizamos para obtener el
+            diseño más eficiente de estructuras que soporten su propio peso
+            (cargas muertas), más las cargas ejercidas por el uso (cargas
+            vivas), más las cargas producidas por eventos de la naturaleza, como
+            vientos, sismos, nieve o agua.
+          </p>
+          <img src="./img/construccion-steel.jpg" alt="imagen4" class="img" />
+        </section>
+        <div class="titulo">
+          <h2 class="titulo">Arquitectura</h2>
+        </div>
+        <section class="textoImagen" id="textoImagen">
+          <p class="lorem">
+            Nos encargamos de proyectar, diseñar, dirigir la construcción y el
+            mantenimiento de espacios, edificios, ciudades y estructuras, con el
+            fin de satisfacer diferentes necesidades a través de la
+            incorporación de estudios técnicos, artísticos y sociales.
+          </p>
+          <img src="./img/calculo.png" alt="imagen5" class="img" />
+        </section>
+        <div class="titulo">
+          <h2 class="titulo">Pintura</h2>
+        </div>
+        <section class="textoImagen" id="textoImagen">
+          <p class="lorem">
+            Realizamos la preparación de la pintura y el proceso de pintado con
+            los materiales y herramientas correspondientes según el tipo de
+            superficie a pintar y la terminación a lograr; aplicando, en todos
+            los casos, criterios de calidad y normas de seguridad e higiene.
+          </p>
+          <img
+            src="./img/pintura-interior-exterior.png"
+            alt="imagen5"
+            class="img"
+          />
+        </section>
+        <div class="titulo">
+          <h2 class="titulo">Sistema AH Durlock</h2>
+        </div>
+        <section class="textoImagen" id="textoImagen">
+          <p class="lorem">
+            Estamos especializados en el Sistema AH Durlock que es el
+            revestimiento indicado para paredes con problemas de humedad. Es la
+            opción ideal para disfrutar de ambientes limpios, estéticos y con el
+            máximo confort que solo Durlock puede brindar.
+          </p>
+          <img src="./img/durlock-tabiques9.jpg" alt="imagen5" class="img" />
+        </section>
+        <div class="titulo">
+          <h2 class="titulo">Cableado electrico</h2>
+        </div>
+        <section class="textoImagen" id="textoImagen">
+          <p class="lorem">
+            Realizamos la instalación eléctrica doméstica, tenemos gente
+            profesional para completar con esta tarea, con materiales de la
+            mejor calidad. La instalación eléctrica es el conjunto de elementos
+            que permiten trasportar y distribuir la energía eléctrica desde el
+            punto de suministro hasta los equipos que la utilizan.
+          </p>
+          <img
+            src="./img/instalacion-electrica.gif"
+            alt="imagen5"
+            class="img"
+          />
+        </section>
       </section>
-      <!--FIN UBICACION GOOGLE MAPS-->
+      <!--FIN LISTA DE SERVICIOS-->
     </main>
     <!--FIN MAIN-->
     <!--FOOTER-->
@@ -145,9 +198,9 @@
       <!--FIN REDES-->
     </footer>
     <!--FIN FOOTER-->
-    <!--Fin Footer-->
   </body>
-
+  
+  <!--BOOTSTRAP SCRIPS-->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -164,4 +217,5 @@
     integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
     crossorigin="anonymous"
   ></script>
+  <!--BOOTSTRAP SCRIPS-->
 </html>
