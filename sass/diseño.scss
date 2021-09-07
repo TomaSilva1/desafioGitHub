@@ -7,6 +7,11 @@
 /*MEDIA*/
 
 @media only screen and (max-width: 425px){
+
+    #cajon__maestro {
+        display: flex;
+        flex-direction: column;
+    }
     .img {
         max-height: 200px !important;
         max-width: 250px !important;
@@ -18,7 +23,11 @@
     }
 
     h2 {
-        font-size: 1em !important;
+        font-size: 1.3em !important;
+    }
+
+    h3 {
+        font-size: 1.1em !important;
     }
 
     h4 {
@@ -113,9 +122,6 @@
         display: flex;
         flex-direction: column;
     }
-    header{
-        height: 17em;
-    }
     .textoImagen{
         display: flex;
         flex-direction: column;
@@ -149,6 +155,10 @@
         }
     }
 
+    .cajon__maestro {
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (max-width: 1440px){
@@ -165,6 +175,22 @@
     .textoImagen {
         width: max-content;
     }
+    .cajon__maestro{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+    .caja__maestro {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .caja__galeria {
+        margin-bottom: 4em;
+    }
+
+
 }
 
 .correoFlex__texto {
@@ -175,6 +201,8 @@
 .secform {
     margin-left: 6em;
 }
+
+
 
 @media only screen and (max-width: 1024px){
     .img {

@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios</title>
     <link rel="stylesheet" href="./Color.css" />
     <link rel="stylesheet" href="./sass/diseño.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!--HEADER-->
@@ -71,7 +66,7 @@
         <div class="titulo">
           <h2 class="titulo">Calculo estructural</h2>
         </div>
-        <section class="textoImagen" id="textoImagen">
+        <section data-aos="slide-up" class="textoImagen" id="textoImagen">
           <p class="lorem">
             El cálculo estructural es el trabajo que realizamos para obtener el
             diseño más eficiente de estructuras que soporten su propio peso
@@ -84,7 +79,7 @@
         <div class="titulo">
           <h2 class="titulo">Arquitectura</h2>
         </div>
-        <section class="textoImagen" id="textoImagen">
+        <section data-aos="slide-up" class="textoImagen" id="textoImagen">
           <p class="lorem">
             Nos encargamos de proyectar, diseñar, dirigir la construcción y el
             mantenimiento de espacios, edificios, ciudades y estructuras, con el
@@ -96,7 +91,7 @@
         <div class="titulo">
           <h2 class="titulo">Pintura</h2>
         </div>
-        <section class="textoImagen" id="textoImagen">
+        <section data-aos="slide-up" class="textoImagen" id="textoImagen">
           <p class="lorem">
             Realizamos la preparación de la pintura y el proceso de pintado con
             los materiales y herramientas correspondientes según el tipo de
@@ -112,7 +107,7 @@
         <div class="titulo">
           <h2 class="titulo">Sistema AH Durlock</h2>
         </div>
-        <section class="textoImagen" id="textoImagen">
+        <section data-aos="slide-up" class="textoImagen" id="textoImagen">
           <p class="lorem">
             Estamos especializados en el Sistema AH Durlock que es el
             revestimiento indicado para paredes con problemas de humedad. Es la
@@ -124,7 +119,7 @@
         <div class="titulo">
           <h2 class="titulo">Cableado electrico</h2>
         </div>
-        <section class="textoImagen" id="textoImagen">
+        <section data-aos="slide-up" class="textoImagen" id="textoImagen">
           <p class="lorem">
             Realizamos la instalación eléctrica doméstica, tenemos gente
             profesional para completar con esta tarea, con materiales de la
@@ -198,6 +193,12 @@
       <!--FIN REDES-->
     </footer>
     <!--FIN FOOTER-->
+    <!--SCRIP ANIMACIONES-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--FIN SCRIP ANIMACIONES-->
   </body>
   
   <!--BOOTSTRAP SCRIPS-->

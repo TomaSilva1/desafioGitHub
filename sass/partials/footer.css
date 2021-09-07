@@ -1,3 +1,4 @@
+/*LOGO Y TEXTO*/
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,6 +22,8 @@
   font-size: 1em;
 }
 
+/*FIN LOGO Y TEXTO*/
+/*REDES*/
 .negro {
   color: black;
 }
@@ -74,6 +77,18 @@
   max-width: 4em;
 }
 
+.ayuda .ayuda__instagram:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.ayuda .ayuda__facebook:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*FIN REDES*/
+/*INFO SUCURSAL*/
 .local {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,4 +106,6 @@
 .local .local__p {
   font-size: 1em;
 }
+
+/*FIN INFO SUCURSAL*/
 /*# sourceMappingURL=footer.css.map */
