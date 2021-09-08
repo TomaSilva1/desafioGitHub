@@ -13,11 +13,11 @@
         display: flex;
         justify-content: space-evenly;
         margin-top: 3em;
-    }
-    .caja__galeria {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        
+        .caja__galeria {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
 
         .caja__figure {
             position: relative;
@@ -58,6 +58,7 @@
         }
 
     }
+}
 
     .interes {
         display: flex;
