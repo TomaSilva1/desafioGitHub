@@ -22,7 +22,7 @@
   margin-top: 3em;
 }
 
-.caja__galeria {
+.caja__maestro .caja__galeria {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,7 @@
           justify-content: space-evenly;
 }
 
-.caja__galeria .caja__figure {
+.caja__maestro .caja__galeria .caja__figure {
   position: relative;
   height: 250px;
   width: 350px;
@@ -45,14 +45,14 @@
   cursor: pointer;
 }
 
-.caja__galeria .caja__figure .caja__img {
+.caja__maestro .caja__galeria .caja__figure .caja__img {
   width: 100%;
   height: 100%;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
 
-.caja__galeria .caja__capa {
+.caja__maestro .caja__galeria .caja__capa {
   position: absolute;
   top: 0;
   height: 100%;
@@ -64,7 +64,7 @@
   text-align: center;
 }
 
-.caja__galeria .caja__texto {
+.caja__maestro .caja__galeria .caja__texto {
   color: black;
   margin-bottom: 5em;
   margin-top: 1em;
@@ -72,7 +72,7 @@
   transition: all 0.6s ease-out;
 }
 
-.caja__galeria .caja__capa:hover {
+.caja__maestro .caja__galeria .caja__capa:hover {
   opacity: 1;
 }
 
@@ -123,6 +123,7 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .ubicacion .ubicacion__argtxt {
@@ -151,20 +152,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .secform .secform__formulario {
-  background-color: lavenderblush;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  background-color: white;
+  width: 55em;
   margin-top: 20px;
   margin-bottom: 100px;
-  -webkit-box-shadow: 0 0 2em darkgrey;
-          box-shadow: 0 0 2em darkgrey;
+  -webkit-box-shadow: 0 2em 2em darkgrey;
+          box-shadow: 0 2em 2em darkgrey;
 }
 
 .secform .secform__legend {
@@ -177,47 +176,47 @@
   display: -ms-flexbox;
   display: flex;
   margin: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .secform .secform__cajaBoton .secform__boton {
-  margin: 10px;
-  padding: 5px 25px;
   text-align: center;
+  margin: 0.3em;
+  padding: 0.3em 1.5em;
   text-transform: uppercase;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-size: 200% auto;
-  color: darkgrey;
+  color: black;
   -webkit-box-shadow: 0 0 20px #eee;
           box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
+  font-weight: bold;
 }
 
 .secform .secform__cajaBoton .secform__boton {
-  background-color: #181717;
+  background-color: #F0F0F0;
 }
 
 .secform .secform__cajaBoton .secform__boton:hover {
   background-position: right center;
-  color: white;
+  color: #286890;
   text-decoration: none;
 }
 
 .secform .secform__datos {
-  margin: 15px;
+  margin: 1em;
 }
 
 .secform .secform__datos .secform__inp {
-  margin-bottom: 25px;
+  margin: 2em;
 }
 
-.correoFlex {
+.secform .dejaComen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,17 +224,41 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 1em;
 }
 
-.correoFlex .correoFlex__texto {
-  -webkit-box-shadow: 0 0 2em darkgrey;
-          box-shadow: 0 0 2em darkgrey;
+.correoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+}
+
+.correoFlex__texto {
+  text-align: center;
+}
+
+.correoFlex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2em;
+}
+
+.correoFlex2 .correoFlex2__texto2 {
+  width: 50em;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: white;
+  padding: 0.2em;
+  -webkit-box-shadow: 0 0.5em 1em grey;
+          box-shadow: 0 0.5em 1em grey;
 }
 
 /*FIN FORMULARIO*/
@@ -379,32 +402,33 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .img {
-    max-height: 200px !important;
-    max-width: 250px !important;
+  #img {
+    max-height: 200px;
+    max-width: 250px;
   }
-  .lorem {
-    font-size: 0.8em !important;
-    width: 65% !important;
+  #lorem {
+    font-size: 0.8em;
+    width: 65%;
   }
-  h2 {
-    font-size: 1.3em !important;
+  #ti2 {
+    font-size: 1.3em;
+    margin-top: 1em;
   }
-  h3 {
-    font-size: 1.1em !important;
+  #ti3 {
+    font-size: 1.1em;
   }
-  h4 {
-    font-size: 0.8em !important;
+  #ti4 {
+    font-size: 0.8em;
   }
-  .local__p {
-    font-size: 0.7em !important;
+  #local__p {
+    font-size: 0.7em;
   }
-  .info__img {
-    width: 5em !important;
-    height: 5em !important;
+  #info__img {
+    width: 5em;
+    height: 5em;
   }
-  .info__lorem {
-    font-size: 0.7em !important;
+  #info__lorem {
+    font-size: 0.7em;
   }
   .textoImagen {
     width: 20em !important;
@@ -415,6 +439,9 @@
   }
   .correoFlex__texto {
     font-size: 1em;
+  }
+  #correoFlex2__texto2 {
+    font-size: 0.9em;
   }
   #secform__inp {
     margin: 0px;
@@ -440,6 +467,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  #ancho-formulario {
+    width: 20em;
+  }
   .img {
     max-height: 350px;
     max-width: 400px;
@@ -577,15 +607,6 @@
   .caja__galeria {
     margin-bottom: 4em;
   }
-}
-
-.correoFlex__texto {
-  width: 60%;
-  text-align: center;
-}
-
-.secform {
-  margin-left: 6em;
 }
 
 @media only screen and (max-width: 1024px) {

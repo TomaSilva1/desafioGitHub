@@ -42,10 +42,11 @@ header {
         text-shadow: 1em 1em 2em white;
     }
     
-    h3 {
+    #ti3 {
         color: black;
         width: max-content;
-        margin-bottom: 1em !important;
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
     
     .lorem {
@@ -189,14 +190,6 @@ header {
     margin-top: 2em;
 }
     /*FIN NOSOTROS*/
-    /*FORMULARIO*/
-    .correo {
-        height: auto;
-        width: auto;
-        max-height: 20em;
-        max-width: 40em;
-    }
-    /*FIN FORMULARIO*/
     .borde {
         padding: 1px;
         background-color: #140f07;
@@ -213,6 +206,10 @@ header {
         width: max-content;
         color: black;
     }
+
+    .nosotros-benef {
+        margin-bottom: 3em;
+    }
 /*FIN MAIN*/
 
 
@@ -226,7 +223,6 @@ p {
 footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 3em;
     padding: 20px;
 }
 
@@ -253,4 +249,3 @@ footer {
 
     /* redes sociales */
 /*FIN FOOTER*/
-
